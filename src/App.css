@@ -30,7 +30,7 @@
   background-repeat: no-repeat;
   animation: slideshow 60s ease-in-out alternate infinite;
   z-index: -2;
-  background-color: rgba(0, 0, 0, 0.9); 
+  background-color: rgba(0, 0, 0, 0.2); 
 }
 
 @keyframes slideshow {
