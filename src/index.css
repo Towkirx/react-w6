@@ -1,0 +1,113 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  
+}
+
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn {
+  background-color: #d11937;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a5122c;
+}
+
+.btn:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.home__header {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.spinner {
+  animation: spinning 200ms infinite;
+}
+
+@keyframes spinning {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.input__wrap {
+  background-color: black;
+  color: rgb(0, 0, 0);
+}
+
+.movies__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  justify-content: center;
+}
+
+.movie__box {
+  flex: 1 1 21%; 
+  max-width: 250px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.poster__img--wrapper {
+  width: 100%;
+  aspect-ratio: 2 / 3; 
+  position: relative;
+}
+
+.poster__img--wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .movie__box {
+    max-width: 200px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .movie__box {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie__box {
+    max-width: 120px; 
+  }
+}
