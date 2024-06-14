@@ -52,7 +52,6 @@ function Landing() {
           {loading ? (
             <div className="absolute spinner top-0 bottom-0 right-0 mr-302 bg-[#00000000] flex justify-center items-center">
               <img
-                src="https://www.shutterstock.com/shutterstock/videos/1090948475/thumb/1.jpg?ip=x480"
                 className="w-10 bg-black "
               />
             </div>
